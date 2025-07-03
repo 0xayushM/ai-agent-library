@@ -1,0 +1,11 @@
+# .npmignore
+.next
+node_modules
+src/
+public/
+*.config.js
+*.config.ts
+tailwind.config.ts
+tsconfig.json
+postcss.config.js
+README.md
