@@ -1,6 +1,6 @@
 {
   "name": "ai-agent-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "exports": {
     ".": {
@@ -9,10 +9,12 @@
     }
   },
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
-"build": "tsc -p tsconfig.build.json && tsup src/index.ts --format esm,cjs --out-dir dist",
+    "build": "tsc -p tsconfig.build.json && tsup src/index.ts --format esm,cjs --out-dir dist",
     "start": "next start",
     "lint": "next lint"
   },
