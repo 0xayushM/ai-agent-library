@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "dev": "next dev",
-    "build": "tsc -p tsconfig.build.json && tsup src/index.ts --format esm,cjs --out-dir dist",
+    "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist",
     "start": "next start",
     "lint": "next lint"
   },
